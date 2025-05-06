@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         <img src="${e.image}" alt="${e.name}">
         <h3>${e.name}</h3>
         <p>Status: ${e.status}</p>
-        <p>Species: ${e.species}</p>
+        <p>Spesies: ${e.species}</p>
       </div>
     `
   })
