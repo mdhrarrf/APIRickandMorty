@@ -4,15 +4,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   const url = 'https://rickandmortyapi.com/api/character'
 
   const hitAPI = async (url) => {
-    try {
       const response = await fetch(url)
       const data = await response.json()
       return data.results
-    } catch (error) {
-      console.error("Gagal ambil data:", error)
-      return []
     }
-  };
 
   const characters = await hitAPI(url)
   let dataHTML = ""
